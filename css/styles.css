@@ -307,7 +307,7 @@ textarea:focus{
 }
 
 .change{
-    display: none;
+    display: none ;
     width: 0;
     height: 0;
     position: relative;
@@ -340,8 +340,8 @@ textarea:focus{
     font-weight: bold;
 }
 
-#manubar{
-
+#menubar{
+    display: none;
 }
 #menubar ul{
     background-color: var(--main-color);

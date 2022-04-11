@@ -1,18 +1,30 @@
 @media(max-width:768px ){
+    .mainmenu{
+        display: none;
+    }
     .navbar{
         padding: 20px;
      
          
     }
-    .mainmenu{
-        display: none;
+    #menubar{
+
+        display: block !important;
+    }
+    #menubar ul{
+        background-color: red;
+        
+    }
+    #menu{
     }
     .change{
         display: block !important;
     }
-    #menubar ul{
-        color: aqua;
+    .nav{
+        z-index: 90;
+
     }
+    
     
 
     .home .container{
