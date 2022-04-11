@@ -58,11 +58,11 @@ nav a:hover{
     font-weight: 500;
 }
 
-nav .current{
+/* nav .current{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), teal;
     font-weight: 500;
     
-}
+} */
 
 /* parallax */
 
@@ -261,95 +261,26 @@ textarea:focus{
     font-size: 19px;
 }
 
+.social a {
+    margin:0 10px;
+    /* color: #fff; */
+  }
+  
+  .fa-github:hover {
+    color: #000000;
+  }
+  
+  .fa-facebook:hover {
+    color: #1773EA;
+  }
+  
+  .fa-instagram:hover {
+    color: #B32E87;
+  }
+  
+  .fa-twitter:hover {
+    color: #1C9CEA;
+  }
 
 
-/* mobile Nav */body{
-    background-color: #373c56;
-}
 
-#menu{
-    /* background-color: white; */
-    width: 35px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-}
-
-.bar{
-    height: 5px;
-    width: 100%;
-    background-color: #fff;
-    display: block;
-    border-radius: 5px;
-
-}
-
-#bar1{
-    transform: translateY(-4px);
-}
-#bar3{
-    transform: translateY(4px);
-}
-.change .bar{
-    background-color: white;
-}
-
-.change #bar1{
-    transform: translateY(4px) rotate(-45deg);
-}
-
-.change #bar3{
-    transform: translateY(-6px) rotate(45deg);
-}
-
-.change #bar2{
-    opacity:0;
-}
-
-.change{
-    display: none ;
-    width: 0;
-    height: 0;
-    position: relative;
-    top:0;
-    right: -140px;
-    /* left: 0; */
-    
-    text-align: center;
-}
-
-/* links */
-.nav{
-    transition: 3s ease-in-out;
-    padding: 0;
-    margin: 0 20px;
-    transition: .3s ease;
-    display: none;
-}
-
-.nav li{
-    list-style: none;
-    padding: 16px 0;
-}
-
-.nav li a{
-    color: #fff;
-    text-decoration: none;
-}
-.nav li a:hover{
-    font-weight: bold;
-}
-
-#menubar{
-    display: none;
-}
-#menubar ul{
-    background-color: var(--main-color);
-    /* background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.1)), teal; */
-    /* padding: 20px; */
-    width: 150px;
-    position: relative;
-    right:  -80px;
-    /* top: 130px; */
-    border-radius: 0 0 0 10px;
-}

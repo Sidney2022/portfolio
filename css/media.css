@@ -1,28 +1,27 @@
 @media(max-width:768px ){
-    .mainmenu{
-        display: none;
-    }
     .navbar{
-        padding: 20px;
-     
-         
+        height: 110px !important;
+        /* padding: 20px;  */
+        padding-bottom: 10px;
     }
-    #menubar{
-
-        display: block !important;
+    
+    .navbar .flex{
+        flex-direction: column !important;
     }
-    #menubar ul{
-        background-color: red;
+    .navbar h1{
+        padding: 5px 0;
+        margin: 0;
+    }
+    .navbar li{
+        /* padding: 20px; */
+        background-color: rgba(0,0,0,0.2);
+        /* margin: 10px 0; */
+    }
+    .navbar a{
+        /* padding: 20px; */
+        display: inline-block;
+        /* margin: 5px 0; */
         
-    }
-    #menu{
-    }
-    .change{
-        display: block !important;
-    }
-    .nav{
-        z-index: 90;
-
     }
     
     
