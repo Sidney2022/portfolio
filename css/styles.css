@@ -1,0 +1,316 @@
+.navbar{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    /* overflow: visible !important; */
+    
+
+}
+
+
+.navbar .flex{
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+nav a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 450;
+    position: relative;
+}
+
+nav  a::after{
+    content: '';
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    /* padding: 0 5px; */
+    position: absolute;
+    left: -5px;
+    right: 0;
+    bottom: -10px;
+    transition: 1s ease-in-out;
+    
+}
+
+nav a:hover::after{
+    width: 120% ;
+}
+
+nav .current::after{
+    width: 120%;
+    
+}
+
+/* parallax */
+
+.parallax {
+  /* The image used */
+background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../logos/4_5904645408461688533.jpeg);
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/_evstratov_-InsHJ5sg2vc-unsplash.jpg);
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* <!-- Container element -->
+<div class="parallax"></div> */
+
+.home{
+    padding-top: 14%;
+    color: #fff;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 50px !important;
+    font-weight: 500;
+}
+.home p{
+    font-size: 20px;
+}
+.home .btn{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid teal;
+    position: relative;
+}
+.home .btn::after{
+    content: '';
+    background-color: teal;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s ease-in;
+}
+
+.home .btn:hover::after{
+    width: 100%;
+}
+.home .btn:hover{
+    transform: scale(1);
+}
+
+/* about */
+
+.about h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+h2, h3{
+    font-size: 40px !important;
+    font-weight: 500 !important;
+}
+/* skills */
+
+/* .skills .card img{
+    width: 30%;
+} */
+.skills{
+    background-color: #fff;
+}
+
+.skills .flex{
+    flex-wrap: wrap;
+}
+
+.skills .card{
+    transition: .4s ease-in-out;
+}
+.skills .card:hover{
+    transform: translateY(-15px);
+}
+
+/* porfolio */
+
+
+.portfolio img{
+    width: 100px;
+}
+.portfolio h4{
+    font-size: 25px;
+}
+.portfolio h3{
+    color: #fff;
+    font-size: 30px;
+}
+.portfolio p{
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.portfolio .grid{
+    gap:10px;
+}
+
+.portfolio .card{
+    /* height: 400px; */
+}
+
+.portfolio .card:hover{
+    transform: scale(1.01);
+
+}
+.portfolio .container{
+    width: 1000px;
+    margin: auto;
+}
+
+
+/* contact */
+
+.contact{
+    background-color: var(--light-color);
+}
+.contact .container{
+    width:500px;
+    margin: auto;
+    justify-self: center !important;
+    padding: 30px;
+}
+.contact h3{
+    font-size: 30px;
+}
+
+
+.form input,
+textarea{
+    padding: 10px;
+    width: 100%;
+    /* border: 0; */
+    /* border-bottom: 2px solid green; */
+    margin: 5px;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+
+.contact .btn{
+    width: 100% !important;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600 !important;
+    border-radius: 5px;
+}
+.form input:focus,
+textarea:focus{
+    outline: none;
+}
+
+.contact span{
+    color: teal;
+}
+
+.footer p{
+    font-size: 19px;
+}
+
+
+
+/* mobile Nav */
+#menubar{
+    display: none ;
+}
+
+#menu{
+    /* background-color: white; */
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.change .bar{
+    background-color: white;
+}
+
+.change #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+    opacity:0;
+}
+
+.change{
+    display: block !important;
+    position: relative;
+    top: 190px;
+}
+
+/* links */
+.nav{
+    transition: 3s ease-in-out;
+    padding: 0;
+    margin: 0 20px;
+    transition: .3s ease;
+    display: none;
+    position: relative;
+    top: 10px;
+    bottom: 0;
+}
+
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}

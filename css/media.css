@@ -1,0 +1,39 @@
+@media(max-width:768px ){
+    .navbar{
+        padding: 20px;
+     
+        
+    }
+    .nmenu{
+        display: none;
+    }
+    #menubar{
+        display: inline-block !important;
+        background-color: transparent;
+        z-index: 2000;
+    }
+
+    .home .container{
+        padding: 0 20px;
+        padding-top:100px ;
+    }
+    .home{
+        height: 300px ;
+    }
+    .about{
+        padding: 10px 30px !important;
+    }
+    .about .btn{
+        margin-bottom: 20px;
+    }
+
+    .portfolio .container{
+        width: 400px !important;
+    }
+    
+    .portfolio .grid{
+        grid-template-columns: 1fr !important;
+    }
+
+
+}

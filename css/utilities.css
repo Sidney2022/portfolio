@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --main-color:teal;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6em;
+    text-transform: capitalize;
+    
+ 
+
+}
+h1,h2{
+    margin: 10px 0;
+    font-weight: 300;
+    line-height: 1.2;
+}
+p{
+    margin: 10px 0;
+    text-transform: none  !important;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px;
+    overflow: visible;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.bgmain{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.bggrey{
+    background-color: var(--light-color);
+}
+
+.btn{
+    padding: 10px;
+    color: #fff;
+    background-color: var(--main-color);
+    margin-top: 20px;
+    display: inline-block;
+    border: 0;
+}
+
+.btnoutline{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid teal;
+}
+.btnoutlinefilled{
+    background-color: teal !important;
+}
+.btn:hover{
+    transform: scale(.98);
+}
+
+.textcenter{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid3{
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+/* Margin */
+.my-1 {
+    margin: 1rem 0;
+  }
+  
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  
+  .my-3 {
+    margin: 2rem 0;
+  }
+  
+  .my-4 {
+    margin: 3rem 0;
+  }
+  
+  .my-5 {
+    margin: 4rem 0;
+  }
+  
+  .m-1 {
+    margin: 1rem;
+  }
+  
+  .m-2 {
+    margin: 1.5rem;
+  }
+  
+  .m-3 {
+    margin: 2rem;
+  }
+  
+  .m-4 {
+    margin: 3rem;
+  }
+  
+  .m-5 {
+    margin: 4rem;
+  }
+  
+  /* Padding */
+  .py-1 {
+    padding: 1rem 0;
+  }
+  
+  .py-2 {
+    padding: 1.5rem 0;
+  }
+  
+  .py-3 {
+    padding: 2rem 0;
+  }
+  
+  .py-4 {
+    padding: 3rem 0;
+  }
+  
+  .py-5 {
+    padding: 4rem 0;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .p-2 {
+    padding: 1.5rem;
+  }
+  
+  .p-3 {
+    padding: 2rem;
+  }
+  
+  .p-4 {
+    padding: 3rem;
+  }
+  
+  .p-5 {
+    padding: 4rem;
+  }
+
+  .cap{
+      text-transform: capitalize;
+  }
+  .darktext{
+      color: #333;
+  }
