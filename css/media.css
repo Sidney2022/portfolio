@@ -4,14 +4,16 @@
      
         
     }
-    .nmenu{
+    .mainmenu{
         display: none;
     }
-    #menubar{
-        display: inline-block !important;
-        background-color: transparent;
-        z-index: 2000;
+    .change{
+        display: block !important;
     }
+    #menubar ul{
+        color: aqua;
+    }
+    
 
     .home .container{
         padding: 0 20px;

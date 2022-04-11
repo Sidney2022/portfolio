@@ -21,13 +21,18 @@ nav ul {
 }
 
 nav ul li{
-    margin: 0 10px;
+    /* margin: 0 5px; */
+
+    /* background-color: greenyellow; */
+    /* padding: 10px 5px; */
+
 }
 nav a{
     color: #fff;
     font-size: 17px;
     font-weight: 450;
     position: relative;
+    padding: 15px ;
 }
 
 nav  a::after{
@@ -44,12 +49,18 @@ nav  a::after{
     
 }
 
-nav a:hover::after{
+/* nav a:hover::after{
     width: 120% ;
+} */
+
+nav a:hover{
+    background-color: rgba(0,0,0,0.2);
+    font-weight: 500;
 }
 
-nav .current::after{
-    width: 120%;
+nav .current{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), teal;
+    font-weight: 500;
     
 }
 
@@ -57,7 +68,7 @@ nav .current::after{
 
 .parallax {
   /* The image used */
-background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../logos/4_5904645408461688533.jpeg);
+background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../logos/mainpic.jpg);
     /* Set a specific height */
     min-height: 600px;
 
@@ -69,7 +80,7 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../logos/4_59
 }
 .parallax2 {
   /* The image used */
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/_evstratov_-InsHJ5sg2vc-unsplash.jpg);
+background: linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)), url(../logos/pexels-photo-546819.jpg);
     /* Set a specific height */
     min-height: 300px;
 
@@ -88,6 +99,7 @@ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/_evstr
     padding-top: 14%;
     color: #fff;
     text-align: center;
+    z-index: -1;
 }
 
 .home h1{
@@ -159,7 +171,7 @@ h2, h3{
 
 
 .portfolio img{
-    width: 100px;
+    width: 150px;
 }
 .portfolio h4{
     font-size: 25px;
@@ -173,12 +185,21 @@ h2, h3{
     margin: 15px 0;
 }
 
+.portfolio a{
+    color:var(--main-color);
+    font-size: 16px;
+
+}
+.portfolio a:hover{
+    font-weight: bold;
+}
+
 .portfolio .grid{
     gap:10px;
 }
 
 .portfolio .card{
-    /* height: 400px; */
+    height: 400px;
 }
 
 .portfolio .card:hover{
@@ -201,6 +222,7 @@ h2, h3{
     margin: auto;
     justify-self: center !important;
     padding: 30px;
+    padding-top: 60px;
 }
 .contact h3{
     font-size: 30px;
@@ -224,6 +246,7 @@ textarea{
     font-size: 16px;
     font-weight: 600 !important;
     border-radius: 5px;
+    cursor: pointer;
 }
 .form input:focus,
 textarea:focus{
@@ -240,9 +263,8 @@ textarea:focus{
 
 
 
-/* mobile Nav */
-#menubar{
-    display: none ;
+/* mobile Nav */body{
+    background-color: #373c56;
 }
 
 #menu{
@@ -285,9 +307,15 @@ textarea:focus{
 }
 
 .change{
-    display: block !important;
+    display: none;
+    width: 0;
+    height: 0;
     position: relative;
-    top: 190px;
+    top:0;
+    right: -140px;
+    /* left: 0; */
+    
+    text-align: center;
 }
 
 /* links */
@@ -297,9 +325,6 @@ textarea:focus{
     margin: 0 20px;
     transition: .3s ease;
     display: none;
-    position: relative;
-    top: 10px;
-    bottom: 0;
 }
 
 .nav li{
@@ -313,4 +338,18 @@ textarea:focus{
 }
 .nav li a:hover{
     font-weight: bold;
+}
+
+#manubar{
+
+}
+#menubar ul{
+    background-color: var(--main-color);
+    /* background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.1)), teal; */
+    /* padding: 20px; */
+    width: 150px;
+    position: relative;
+    right:  -80px;
+    /* top: 130px; */
+    border-radius: 0 0 0 10px;
 }
