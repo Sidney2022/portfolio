@@ -68,7 +68,7 @@ nav a:hover{
 
 .parallax {
   /* The image used */
-background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../logos/mainpic.jpg);
+background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/mainpic.jpg);
     /* Set a specific height */
     min-height: 600px;
 
@@ -80,7 +80,7 @@ background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../logos/main
 }
 .parallax2 {
   /* The image used */
-background: linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)), url(../logos/pexels-photo-546819.jpg);
+background: linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)), url(../images/pexels-photo-546819.jpg);
     /* Set a specific height */
     min-height: 300px;
 
@@ -116,7 +116,7 @@ background: linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)), url(../logos/pex
     border: 2px solid teal;
     position: relative;
 }
-.home .btn::after{
+/* .home .btn::after{
     content: '';
     background-color: teal;
     height: 100%;
@@ -131,10 +131,8 @@ background: linear-gradient(rgba(0,0,0,0.7 ), rgba(0,0,0,0.7)), url(../logos/pex
 
 .home .btn:hover::after{
     width: 100%;
-}
-.home .btn:hover{
-    transform: scale(1);
-}
+} */
+
 
 /* about */
 

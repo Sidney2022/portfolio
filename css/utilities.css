@@ -23,7 +23,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6em;
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     
  
 
@@ -204,7 +204,7 @@ img{
   }
 
   .cap{
-      text-transform: capitalize;
+      text-transform: capitalize !important;
   }
   .darktext{
       color: #333;

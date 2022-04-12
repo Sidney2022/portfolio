@@ -50,3 +50,16 @@
 
 
 }
+
+@media(max-width:500px){
+    .parallax {
+    
+    }
+    .navbar,
+    .home,
+    .about,
+    .skills,
+    .portfolio{
+          width: 500px !important;
+      }
+}
